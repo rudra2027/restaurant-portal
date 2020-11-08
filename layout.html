@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="menu-bar" id="navbar">
+        <i class="fa fa-bars" id="btn" onclick="togglehide()">
+            <ul id="para" class="tog">
+                <li ><a href="LOGIN.HTML">LOGIN</a></li>
+                <li><a href="SIGNUP.HTML">SIGN-UP</a></li>
+                <li><a href="help.html">HELP</a></li>
+                
+            </ul>
+            </i>
+        <script>
+            function togglehide() {
+                let btn = document.getElementById('btn');
+                let para = document.getElementById('para');
+                if (para.style.display != "none") {
+                    para.style.display = "none";
+                } else {
+                    para.style.display = "block";
+                }
+
+            }
+
+            window.onscroll = function() {
+                myFunction()
+            };
+
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <ul>
+            <li class="active"><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+
+
+            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>  LOCATION</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me">
+                            <a href="#">MADHYA PRADESH</a><i class="fa fa-angle-right">
+                            </i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li>
+                                        <a href="location/MADHYAPRADESH/BHOPAL.HTML">BHOPAL
+                                    </a>
+                                    </li>
+                                    <li>
+                                        <a href="location/MADHYAPRADESH/INDORE.HTML">INDORE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me">
+                            <a href="#">PUNJAB</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li>
+                                        <a href="location/PUNJAB/JALANDHAR.HTML">JALANDHAR
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="location/PUNJAB/CHANDIGARH.HTML">CHANDIGARH</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+            </li>
+            </ul>
+            </div>
+            </li>
+            <li><a href="#"><i class="fa fa-filter" aria-hidden="true"></i> CATEGORY</a>
+                <div class="sub-menu-3">
+                    <ul>
+                        <li>
+                            <a href="category/chinese.html">CHINESE</a>
+                        </li>
+                        <li>
+                            <a href="category/japanese.html">JAPANESE</a</li>
+                                 <li>
+                                     <a href="category/italian.html">ITALIAN</a>
+                        </li>
+                        <li>
+                            <a href="category/south-indian.html">SOUTH-INDIAN</a>
+                        </li>
+                        <li>
+                            <a href="category/north-indian.html">NORTH-INDIAN</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> FOOD</a>
+
+                <div class="sub-menu-4">
+                    <ul>
+                        <li>
+                            <a href="food/drinks.html">DRINKS</a>
+                        </li>
+                        <li>
+                            <a href="food/fast-food.html">FAST-FOOD</a</li>
+                                 <li>
+                                     <a href="food/maincourse.html">MAIN-COURSE</a>
+                        </li>
+                        <li>
+                            <a href="food/non-veg.html">NON-VEG</a>
+                        </li>
+                        <li>
+                            <a href="food/veg.html">VEG</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="contactus.html"><i class="fa fa-mobile" aria-hidden="true"></i>  CONTACT-US</a></li>
+
+
+
+
+            </li>
+
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="mp" style="float: inline-start;color: lavender;font-style: italic;font-weight: bolder;">
+        <center>
+            <a href="food/maincourse.html"> <img style=" margin-top:120px ;margin-left: 15px;width:360px; " src="https://th.bing.com/th/id/OIP.r92iwRrtqadhDmF0FmoPXQHaE3?pid=Api&rs=1 " class="rounded-circle " alt="Cinque Terre "></a>
+            <div class="middle 1">
+                <div class="text ">MAIN-COURSE</div>
+            </div>
+
+            <a href="category/chinese.html"><img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://www.tripsavvy.com/thmb/WzbY1hD9IUUI2Y1WIEyvlYB8TWQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/26-5adafa56c6733500373c3cf5.jpg " class="rounded-circle
+        " alt="Cinque Terre "></a>
+            <div class="middle ">
+                <div class="text ">FOREIGN-CUISINS</div>
+            </div>
+
+            <a href="location/MADHYAPRADESH/BHOPAL.HTML"><img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://th.bing.com/th/id/OIP.pgMZutmqD10KKPYcORrf6gHaFj?pid=Api&rs=1 " class="rounded-circle " alt="Cinque Terre "></a>
+            <div class="middle ">
+                <div class="text ">INDIAN-CUISINS</div>
+            </div>
+
+            <a href="food/veg.html"> <img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://www.tripsavvy.com/thmb/n2OmGgmQN7TfTs7Oi4T9Mj8DBiM=/2168x1383/filters:fill(auto,1)/GettyImages-913677156-3fca0dd4029849ab912cd48cfec4a4db.jpg " class="rounded-circle
+        " alt="Cinque Terre "></a>
+            <div class="middle ">
+                <div class="text ">VEG</div>
+            </div>
+
+            <a href="food/non-veg.html"> <img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://th.bing.com/th/id/OIP.jSYJ59ZX1rWQowL-wPEftwHaFj?pid=Api&rs=1 " class="rounded-circle " alt="Cinque Terre ">
+                <div class="middle ">
+            </a>
+            <div class="text ">NON-VEG</div>
+            </div>
+
+            <a href="food/maincourse.html"> <img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://yennadosa.com/wp-content/uploads/2018/12/radhikashomepagefinal.jpg " class="rounded-circle " alt="Cinque Terre ">
+                <div class="middle ">
+            </a>
+            <div class="text ">SOUTH-INDIAN</div>
+            </div>
+
+            <a href="food/drinks.html"><img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://th.bing.com/th/id/OIP.TqfPziaOsNiuRzpvJZOWXQHaFZ?pid=Api&rs=1 " class="rounded-circle " alt="Cinque Terre ">
+                <div class="middle ">
+            </a>
+            <div class="text ">DRINKS</div>
+            </div>
+
+            <a href="food/fast-food.html"><img style="margin-top:120px ;margin-left: 15px;width:360px;height: 260px; " src="https://th.bing.com/th/id/OIP.UHuKjzmoj6g8qwyRAltxOwHaLH?pid=Api&rs=1 " class="rounded-circle " alt="Cinque Terre ">
+                <div class="middle ">
+            </a>
+            <div class="text ">FAST-FOOD</div>
+            </div>
+
+            <a href="food/non-veg.html"> <img style="margin-top:120px ;margin-left: 15px;width:360px; " src="https://th.bing.com/th/id/OIP.7k0KyW5oKa3IB7L6GXKeuAHaE8?pid=Api&rs=1 " class="rounded-circle " alt="Cinque Terre ">
+                <div class="middle ">
+            </a>
+            <div class="text ">SPECIAL-FOODS</div>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
