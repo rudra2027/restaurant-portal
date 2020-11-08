@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <h1>Countact-Us</h1>
+</head>
+
+
+<style>
+    h1 {
+        color: red;
+        text-align: center;
+        font-size: 40px;
+        padding: 14px;
+        margin: 13px;
+        margin-bottom: 7px;
+    }
+    
+    body {
+        background-image: url(https://media.istockphoto.com/photos/contact-us-email-phone-message-contact-communication-web-landing-page-picture-id884374384?k=6&m=884374384&s=170667a&w=0&h=K9FVxAdIzdO2vxexan_Mmu5Tcz_5k-dRmvhRsPiCwBQ=);
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    .container {
+        border-radius: 5px;
+        background: transparent;
+        padding: 20px;
+        color: white
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="location">Location</label>
+            <select id="location" name="location">
+        <option value="bhpal">Bhopal</option>
+        <option value="indore">Indore</option>
+        <option value="jalandhar">jalandhar</option>
+        <option value="chandigarh">Chandigarh</option>
+      </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>

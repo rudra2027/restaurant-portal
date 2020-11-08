@@ -1,0 +1,203 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow: hidden;
+        width: 1300px;
+        height: 680px;
+        padding: 0;
+        margin-top: 90px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .css-slider-wrapper {
+        display: block;
+        background: #FFF;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .slider {
+        width: 1300px;
+        height: 680px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        z-index: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        -webkit-transition: -webkit-transform 1600ms;
+        transition: -webkit-transform 1600ms, transform 1600ms;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    .slide-1 {
+        background: #fbad99;
+        left: 0;
+    }
+    
+    .slide-2 {
+        background: #a9785c;
+        left: 100%
+    }
+    
+    .slide-3 {
+        background: #9ea6b3;
+        left: 200%
+    }
+    
+    .slide-4 {
+        background: #b1a494;
+        left: 300%;
+    }
+    
+    .slider {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .slider &gt;
+    img {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        height: 100%;
+        opacity: 0;
+        -webkit-transform: translateX(500px);
+        transform: translateX(500px);
+    }
+    
+    .slide-1 &gt;
+    img {
+        right: 0;
+    }
+    
+    .slider &gt;
+    img {
+        -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+        transition: transform 800ms, opacity 800ms;
+        -webkit-transition-delay: 1.2s;
+        transition-delay: 1.2s;
+    }
+    
+    .slider-pagination {
+        position: absolute;
+        bottom: 30px;
+        width: 575px;
+        left: 100px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slider-pagination label {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        background: goldenrod;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
+    .slide-radio1:checked~.slider-pagination .page1,
+    .slide-radio2:checked~.slider-pagination .page2,
+    .slide-radio3:checked~.slider-pagination .page3,
+    .slide-radio4:checked~.slider-pagination .page4 {
+        width: 14px;
+        height: 14px;
+        border: 2px solid red;
+        background: transparent;
+    }
+    
+    .slide-radio1:checked~.slider {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    
+    .slide-radio2:checked~.slider {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    
+    .slide-radio3:checked~.slider {
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
+    }
+    
+    .slide-radio4:checked~.slider {
+        -webkit-transform: translateX(-300%);
+        transform: translateX(-300%);
+    }
+    
+    .slide-radio1:checked~.slide-1 h2,
+    .slide-radio2:checked~.slide-2 h2,
+    .slide-radio3:checked~.slide-3 h2,
+    .slide-radio4:checked~.slide-4 h2,
+    .slide-radio1:checked~.slide-1 h4,
+    .slide-radio2:checked~.slide-2 h4,
+    .slide-radio3:checked~.slide-3 h4,
+    .slide-radio4:checked~.slide-4 h4,
+    .slide-radio1:checked~.slide-1 &gt;
+    img,
+    .slide-radio2:checked~.slide-2 &gt;
+    img,
+    .slide-radio3:checked~.slide-3 &gt;
+    img,
+    .slide-radio4:checked~.slide-4 &gt;
+    img {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .slider h2 {
+            font-size: 20px;
+        }
+        .slider h4 {
+            font-size: 16px;
+        }
+        .slider-content {
+            padding: 0 2%
+        }
+        .navigation {
+            padding: 0 2%;
+        }
+        .navigation-left {
+            display: none;
+        }
+        .number-pagination {
+            right: 2%;
+        }
+        .slider-pagination {
+            left: 2%;
+        }
+        .slider .buy-now-btn {
+            padding: 0 15px;
+            width: 175px;
+            height: 42px;
+        }
+        .slider .buy-now-btn:after {
+            top: 15px;
+        }
+        .slider &gt;
+        img {
+            right: 2%;
+        }
+        .slide-1 &gt;
+        img {
+            right: -110px;
+        }
+    }
