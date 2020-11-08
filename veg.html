@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhopal</title>
+</head>
+<style>
+    .gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%;
+    }
+    
+    .gallery .pics {
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease;
+    }
+    
+    .gallery .animation {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background: grey;
+        color: tomato;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: underline;
+    }
+    
+    .btn:hover {
+        background-color: black;
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 450px) {
+        .gallery {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            -webkit-column-width: 100%;
+            -moz-column-width: 100%;
+            column-width: 100%;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .btn.filter {
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="row">
+
+
+
+
+    </div>
+
+    <div class="gallery" id="gallery">
+
+        <div class="mb-3 pics animation all 2">
+            <img class="img-fluid" src="https://th.bing.com/th/id/OIP.f_saaWmK4nbVsf7BA_fDiwHaEK?pid=Api&rs=1" alt="Card image cap">
+            <button class="btn"><a href="#"> DETAILS</a></button> </div>
+
+        <div class="mb-3 pics animation all 1">
+            <img style="width:427px" class=" img-fluid " src="https://media-cdn.tripadvisor.com/media/photo-s/05/17/2a/02/uva-wine-bar.jpg " alt="Card image cap ">
+            <button class="btn "><a href="# ">DETAILS</a></button>
+        </div>
+
+        <div class="mb-3 pics animation all 1 ">
+            <img style="width:427px;height:430px ;" class=" img-fluid " src="https://th.bing.com/th/id/OIP.c-3Ce3Jf5D9ehHYB88a7DwHaFM?pid=Api&rs=1" alt="Card image cap ">
+            <button class="btn "><a href="#">DETAILS</a></button> </div>
+        <div class="mb-3 pics animation all 2 ">
+            <img style="width:427px;height:430px; " class="img-fluid " src="http://media-cdn.tripadvisor.com/media/photo-s/03/00/83/f7/alluring-front.jpg " alt="Card image cap ">
+            <button class="btn "><a href="#">DETAILS</a></button> </div>
+
+
+        <div class="mb-3 pics animation all 2 ">
+            <img class="img-fluid " src="https://th.bing.com/th/id/OIP.cdstVhE7ifiiPrPlWr4k2AHaFj?pid=Api&rs=1" alt="Card image cap ">
+            <button class="btn "><a href="#">DETAILS</a></button> </div>
+
+        <div class="mb-3 pics animation all 1 ">
+            <img class="img-fluid " src="https://i1.wp.com/www.indiaretailing.com/wp-content/uploads/2018/11/unos.jpg?fit=681%2C400&ssl=1" alt="Card image cap ">
+            <button class="btn "><a href="# ">DETAILS</a></button> </div>
+
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
